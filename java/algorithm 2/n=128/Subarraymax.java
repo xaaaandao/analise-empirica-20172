@@ -15,14 +15,14 @@ public class Subarraymax{
 	@return best, é um inteiro que retorna o melhor valor.
 	*/
 	public static int betterEnumeration(int []vector, int n){
-		int i = 0, j = 0, k = 0;
+		int i = 0, j = 0;
 		int best = 0, count = 0;
 		while(i < n){
 			count = 0;
 			j = i;
 			while(j < n){
 				count = count + vector[j];
-				if(best > count){
+				if(count > best){
 					best = count;
 				}
 				j++;

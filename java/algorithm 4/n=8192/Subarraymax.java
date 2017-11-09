@@ -16,7 +16,7 @@ public class Subarraymax{
 	*/
 	public static int dynamicProgramming(int []vector){
 		int []solution = new int[vector.length];
-		int size = vector.length + 1, i = 0, result;
+		int size = vector.length, i = 0, result;
 		
 		i = 0;
 		while(i < size){

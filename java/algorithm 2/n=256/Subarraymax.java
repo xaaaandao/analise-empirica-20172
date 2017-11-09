@@ -22,7 +22,7 @@ public class Subarraymax{
 			j = i;
 			while(j < n){
 				count = count + vector[j];
-				if(best > count){
+				if(count > best){
 					best = count;
 				}
 				j++;
